@@ -29,7 +29,6 @@ tput sgr0
 echo
 
 
-
 echo
 tput setaf 3
 echo "################################################################"
@@ -38,6 +37,11 @@ echo "################################################################"
 tput sgr0
 echo
 
+mkdir ~/Devwork
+mkdir ~/Devwork/python_dir
+mkdir ~/Devwork/infraops_dir
+mkdir ~/Devwork/python_dir/micro
+micro ~/Devwork/python_dir/sandbox
 
 
 echo
@@ -48,7 +52,7 @@ echo "################################################################"
 tput sgr0
 echo
 
-sudo pacman -S archlinux-keyring
+sudo pacman -S --noconfirm --needed archlinux-keyring
 
 sudo pacman -Sy
 
