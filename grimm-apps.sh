@@ -37,6 +37,10 @@ yay -S --noconfirm --needed visual-studio-code-bin
 yay -S --noconfirm --needed sublime-text-4
 yay -S --noconfirm --needed google-cloud-sdk
 yay -S --noconfirm --needed gitkraken
+yay -S --noconfirm --needed noto-fonts-emoji
+yay -S --noconfirm --needed noto-color-emoji-fontconfig
+yay -S --noconfirm --needed ttf-jetbrains-mono
+yay -S --noconfirm --needed slack-desktop
 
 sudo pacman -S --noconfirm --needed simplescreenrecorder
 sudo pacman -S --noconfirm --needed zsh
@@ -51,6 +55,8 @@ sudo pacman -S --noconfirm --needed p7zip
 sudo pacman -S --noconfirm --needed unace
 sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
+
+sudo pacman -S --noconfirm --needed dbeaver
 
 sudo systemctl enable avahi-daemon.service
 sudo systemctl enable ntpd.service
@@ -67,19 +73,6 @@ echo
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
 sudo usermod -aG docker $USER
-
-echo
-tput setaf 2
-echo "################################################################"
-echo "################### Setting Up cloud-sql-proxy"
-echo "################################################################"
-tput sgr0
-echo
-
-wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
-chmod +x cloud_sql_proxy
-echo $PATH
-sudo mv cloud_sql_proxy /usr/local/bin/cloud_sql_proxy 
 
 # when on xfce
 
@@ -100,6 +93,20 @@ if [ -f /usr/share/xsessions/xfce.desktop ]; then
   sudo pacman -S --noconfirm --needed xfce4-terminal-base16-colors-git
 
 fi
+
+echo
+tput setaf 2
+echo "################################################################"
+echo "################### Setting Up cloud-sql-proxy"
+echo "################################################################"
+tput sgr0
+echo
+
+wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
+chmod +x cloud_sql_proxy
+echo $PATH
+sudo mv cloud_sql_proxy /usr/local/bin/cloud_sql_proxy 
+
 
 echo
 tput setaf 6
