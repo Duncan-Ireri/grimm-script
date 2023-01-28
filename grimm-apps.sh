@@ -42,6 +42,9 @@ yay -S --noconfirm --needed noto-color-emoji-fontconfig
 yay -S --noconfirm --needed ttf-jetbrains-mono
 yay -S --noconfirm --needed slack-desktop
 
+yay -S --noconfirm --needed elasticsearch
+yay -S --noconfirm --needed kibana
+
 sudo pacman -S --noconfirm --needed simplescreenrecorder
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed zsh-completions
