@@ -41,7 +41,7 @@ mkdir ~/Devwork
 mkdir ~/Devwork/python_dir
 mkdir ~/Devwork/infraops_dir
 mkdir ~/Devwork/python_dir/micro
-micro ~/Devwork/python_dir/sandbox
+mkdir ~/Devwork/python_dir/sandbox
 
 
 echo
@@ -57,6 +57,7 @@ sudo pacman -S --noconfirm --needed archlinux-keyring
 sudo pacman -Sy
 
 sh grimm-apps*
+sh grimm-eos*
 
 tput setaf 2
 echo "################################################################"

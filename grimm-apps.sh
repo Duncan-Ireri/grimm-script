@@ -27,7 +27,13 @@ echo
 
 sudo pacman -S --noconfirm --needed curl
 
+sudo pacman -S --noconfirm --needed wget
+
+# wget bit.ly/get-arcolinux-keys && chmod +x ./get-arcolinux-keys  && sudo ./get-arcolinux-keys && sudo pacman -Syu archlinux-tweak-tool-git
+
 sudo pacman -S --noconfirm --needed - < apps.txt
+
+sudo pacman -S --noconfirm --needed gnome-keyring libsecret libgnome-keyring
 
 sudo pacman -S --noconfirm --needed mariadb mariadb-clients python-mysqlclient
 
@@ -37,13 +43,50 @@ yay -S --noconfirm --needed visual-studio-code-bin
 yay -S --noconfirm --needed sublime-text-4
 yay -S --noconfirm --needed google-cloud-sdk
 yay -S --noconfirm --needed gitkraken
+yay -S --noconfirm --needed slack-desktop
+
+
+echo
+tput setaf 2
+echo "################################################################"
+echo "################### Fonts"
+echo "################################################################"
+tput sgr0
+echo
+
 yay -S --noconfirm --needed noto-fonts-emoji
 yay -S --noconfirm --needed noto-color-emoji-fontconfig
 yay -S --noconfirm --needed ttf-jetbrains-mono
-yay -S --noconfirm --needed slack-desktop
+
+sudo pacman -S --noconfirm --needed ttf-bitstream-vera
+sudo pacman -S --noconfirm --needed ttf-dejavu
+sudo pacman -S --noconfirm --needed ttf-droid
+sudo pacman -S --noconfirm --needed ttf-hack
+sudo pacman -S --noconfirm --needed ttf-inconsolata
+sudo pacman -S --noconfirm --needed ttf-liberation
+sudo pacman -S --noconfirm --needed ttf-roboto
+sudo pacman -S --noconfirm --needed ttf-roboto-mono
+sudo pacman -S --noconfirm --needed ttf-ubuntu-font-family
+
+
+echo
+tput setaf 2
+echo "################################################################"
+echo "################### Elasticsearch"
+echo "################################################################"
+tput sgr0
+echo
 
 yay -S --noconfirm --needed elasticsearch
 yay -S --noconfirm --needed kibana
+
+echo
+tput setaf 2
+echo "################################################################"
+echo "################### Other"
+echo "################################################################"
+tput sgr0
+echo
 
 sudo pacman -S --noconfirm --needed simplescreenrecorder
 sudo pacman -S --noconfirm --needed zsh
@@ -58,6 +101,13 @@ sudo pacman -S --noconfirm --needed p7zip
 sudo pacman -S --noconfirm --needed unace
 sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
+
+sudo pacman -S --noconfirm --needed gnome-disk-utility
+sudo pacman -S --noconfirm --needed gparted
+
+sudo pacman -S --noconfirm --needed logrotate
+sudo pacman -S --noconfirm --needed lolcat
+sudo pacman -S --noconfirm --needed lshw
 
 sudo pacman -S --noconfirm --needed dbeaver
 

@@ -11,7 +11,6 @@ gnucash
 intellij-idea-community-edition
 kotlin
 nginx
-octopi
 okular
 postgresql
 prometheus
@@ -30,7 +29,6 @@ terraform
 transmission-gtk
 ttf-cascadia-code
 ttf-fira-code
-ttf-meslo-nerd-font-powerlevel10k
 ttf-opensans
 docker
 docker-compose
