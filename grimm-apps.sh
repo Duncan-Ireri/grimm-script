@@ -37,14 +37,30 @@ sudo pacman -S --noconfirm --needed gnome-keyring libsecret libgnome-keyring
 
 sudo pacman -S --noconfirm --needed mariadb mariadb-clients python-mysqlclient
 
+echo
+tput setaf 2
+echo "################################################################"
+echo "################### Developer Central"
+echo "################################################################"
+tput sgr0
+echo
+
+yay -S --noconfirm --needed python39
 yay -S --noconfirm --needed python38
 yay -S --noconfirm --needed python37
+yay -S --noconfirm --needed gradle
+yay -S --noconfirm --needed maven
+yay -S --noconfirm --needed spring-boot-cli
+yay -S --noconfirm --needed kafka
+
 yay -S --noconfirm --needed visual-studio-code-bin
 yay -S --noconfirm --needed sublime-text-4
 yay -S --noconfirm --needed google-cloud-sdk
 yay -S --noconfirm --needed gitkraken
 yay -S --noconfirm --needed slack-desktop
-
+yay -S --noconfirm --needed python-poetry
+yay -S --noconfirm --needed python-cookiecutter
+yay -S --noconfirm --needed spyder
 
 echo
 tput setaf 2
