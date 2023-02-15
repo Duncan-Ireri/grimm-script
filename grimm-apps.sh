@@ -55,6 +55,7 @@ yay -S --noconfirm --needed kafka
 
 yay -S --noconfirm --needed visual-studio-code-bin
 yay -S --noconfirm --needed sublime-text-4
+yay -S --noconfirm --needed sublime-merge
 yay -S --noconfirm --needed google-cloud-sdk
 yay -S --noconfirm --needed gitkraken
 yay -S --noconfirm --needed slack-desktop
@@ -176,6 +177,19 @@ chmod +x cloud_sql_proxy
 echo $PATH
 sudo mv cloud_sql_proxy /usr/local/bin/cloud_sql_proxy 
 
+
+echo
+tput setaf 2
+echo "################################################################"
+echo "################### Setting Up clamav"
+echo "################################################################"
+tput sgr0
+echo
+
+yay -S --noconfirm --needed clamav
+systemctl stop clamav-freshclam
+sudo freshclam
+systemctl start clamav-freshclam
 
 echo
 tput setaf 6
