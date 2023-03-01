@@ -57,7 +57,7 @@ sudo pacman -S --noconfirm --needed archlinux-keyring
 sudo pacman -Sy
 
 sh grimm-apps*
-sh grimm-eos*
+# sh grimm-eos*
 
 tput setaf 2
 echo "################################################################"

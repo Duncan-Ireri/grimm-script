@@ -15,7 +15,11 @@ echo "########################################################################"
 tput sgr0
 echo
 
-sudo pacman -Syy
+sudo pacman -S reflector
+sudo pacman-mirrors --fasttrack 5
+
+sudo reflector --age 6 --latest 20 --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist
+sudo pacman -Syu
 
 echo
 tput setaf 2
@@ -62,6 +66,17 @@ yay -S --noconfirm --needed slack-desktop
 yay -S --noconfirm --needed python-poetry
 yay -S --noconfirm --needed python-cookiecutter
 yay -S --noconfirm --needed spyder
+
+echo
+tput setaf 3
+echo "################################################################"
+echo "################### Git Store Command"
+echo "################################################################"
+tput sgr0
+echo
+
+git config --global credential.helper store
+git config --global credential.helper
 
 echo
 tput setaf 2
