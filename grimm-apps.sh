@@ -15,10 +15,6 @@ echo "########################################################################"
 tput sgr0
 echo
 
-sudo pacman -S reflector
-sudo pacman-mirrors --fasttrack 5
-
-sudo reflector --age 6 --latest 20 --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist
 sudo pacman -Syu
 
 echo
@@ -29,17 +25,64 @@ echo "################################################################"
 tput sgr0
 echo
 
+# sudo pacman -S --noconfirm --needed - < apps.txt
+
 sudo pacman -S --noconfirm --needed curl
 
 sudo pacman -S --noconfirm --needed wget
 
-# wget bit.ly/get-arcolinux-keys && chmod +x ./get-arcolinux-keys  && sudo ./get-arcolinux-keys && sudo pacman -Syu archlinux-tweak-tool-git
-
-sudo pacman -S --noconfirm --needed - < apps.txt
-
 sudo pacman -S --noconfirm --needed gnome-keyring libsecret libgnome-keyring
 
 sudo pacman -S --noconfirm --needed mariadb mariadb-clients python-mysqlclient
+
+sudo pacman -S --noconfirm --needed aircrack-ng
+sudo pacman -S --noconfirm --needed ansible
+sudo pacman -S --noconfirm --needed awesome-terminal-fonts
+sudo pacman -S --noconfirm --needed aws-cli-v2
+sudo pacman -S --noconfirm --needed catfish
+sudo pacman -S --noconfirm --needed dropbear
+sudo pacman -S --noconfirm --needed elisa
+sudo pacman -S --noconfirm --needed github-cli
+sudo pacman -S --noconfirm --needed glances
+sudo pacman -S --noconfirm --needed gnucash
+sudo pacman -S --noconfirm --needed intellij-idea-community-edition
+sudo pacman -S --noconfirm --needed kotlin
+sudo pacman -S --noconfirm --needed nginx
+sudo pacman -S --noconfirm --needed okular
+sudo pacman -S --noconfirm --needed postgresql
+sudo pacman -S --noconfirm --needed prometheus
+sudo pacman -S --noconfirm --needed pycharm-community-edition
+sudo pacman -S --noconfirm --needed python-aws-xray-sdk
+sudo pacman -S --noconfirm --needed python-dropbox
+sudo pacman -S --noconfirm --needed python-flask-marshmallow
+sudo pacman -S --noconfirm --needed python-kubernetes
+sudo pacman -S --noconfirm --needed python-pipenv
+sudo pacman -S --noconfirm --needed python-redis
+sudo pacman -S --noconfirm --needed rebuild-detector
+sudo pacman -S --noconfirm --needed redis
+sudo pacman -S --noconfirm --needed remmina
+sudo pacman -S --noconfirm --needed sqlitebrowser
+sudo pacman -S --noconfirm --needed terraform
+sudo pacman -S --noconfirm --needed transmission-gtk
+sudo pacman -S --noconfirm --needed ttf-cascadia-code
+sudo pacman -S --noconfirm --needed ttf-fira-code
+sudo pacman -S --noconfirm --needed ttf-opensans
+sudo pacman -S --noconfirm --needed docker
+sudo pacman -S --noconfirm --needed docker-compose
+sudo pacman -S --noconfirm --needed gitea
+sudo pacman -S --noconfirm --needed gnome-boxes
+sudo pacman -S --noconfirm --needed jupyter-notebook
+sudo pacman -S --noconfirm --needed jupyterlab
+sudo pacman -S --noconfirm --needed traefik
+sudo pacman -S --noconfirm --needed wakatime
+sudo pacman -S --noconfirm --needed sheldon
+sudo pacman -S --noconfirm --needed meld
+sudo pacman -S --noconfirm --needed python-pywal
+sudo pacman -S --noconfirm --needed pv
+sudo pacman -S --noconfirm --needed ttf-roboto-mono
+sudo pacman -S --noconfirm --needed libreoffice-fresh
+sudo pacman -S --noconfirm --needed terminator
+sudo pacman -S --noconfirm --needed screen
 
 echo
 tput setaf 2
@@ -77,6 +120,10 @@ echo
 
 git config --global credential.helper store
 git config --global credential.helper
+
+git config --global user.name "DuncanIreri"
+git config --global user.email "duncanireri@gmail.com"
+sudo git config --system core.editor nano
 
 echo
 tput setaf 2
