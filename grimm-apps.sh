@@ -35,6 +35,7 @@ sudo pacman -S --noconfirm --needed gnome-keyring libsecret libgnome-keyring
 
 sudo pacman -S --noconfirm --needed mariadb mariadb-clients python-mysqlclient
 
+sudo pacman -S --noconfirm --needed arc-gtk-theme
 sudo pacman -S --noconfirm --needed aircrack-ng
 sudo pacman -S --noconfirm --needed ansible
 sudo pacman -S --noconfirm --needed awesome-terminal-fonts
@@ -71,7 +72,6 @@ sudo pacman -S --noconfirm --needed docker
 sudo pacman -S --noconfirm --needed docker-compose
 sudo pacman -S --noconfirm --needed gitea
 sudo pacman -S --noconfirm --needed gnome-boxes
-sudo pacman -S --noconfirm --needed jupyter-notebook
 sudo pacman -S --noconfirm --needed jupyterlab
 sudo pacman -S --noconfirm --needed traefik
 sudo pacman -S --noconfirm --needed wakatime
