@@ -83,6 +83,11 @@ sudo pacman -S --noconfirm --needed ttf-roboto-mono
 sudo pacman -S --noconfirm --needed libreoffice-fresh
 sudo pacman -S --noconfirm --needed terminator
 sudo pacman -S --noconfirm --needed screen
+sudo pacman -S --noconfirm --needed opencv
+sudo pacman -S --noconfirm --needed tesseract
+sudo pacman -S --noconfirm --needed python-pytesseract
+sudo pacman -S --noconfirm --needed tesseract-data-eng
+sudo pacman -S --noconfirm --needed tesseract-data-swa
 
 echo
 tput setaf 2
@@ -136,6 +141,8 @@ echo
 yay -S --noconfirm --needed noto-fonts-emoji
 yay -S --noconfirm --needed noto-color-emoji-fontconfig
 yay -S --noconfirm --needed ttf-jetbrains-mono
+yay -S --noconfirm --needed ttf-monoid
+yay -S --noconfirm --needed ttf-monoid-nerd
 
 sudo pacman -S --noconfirm --needed ttf-bitstream-vera
 sudo pacman -S --noconfirm --needed ttf-dejavu
