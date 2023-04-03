@@ -108,12 +108,18 @@ yay -S --noconfirm --needed kafka
 yay -S --noconfirm --needed visual-studio-code-bin
 yay -S --noconfirm --needed sublime-text-4
 yay -S --noconfirm --needed sublime-merge
-yay -S --noconfirm --needed google-cloud-sdk
+yay -S --noconfirm --needed google-cloud-cli
 yay -S --noconfirm --needed gitkraken
 yay -S --noconfirm --needed slack-desktop
 yay -S --noconfirm --needed python-poetry
 yay -S --noconfirm --needed python-cookiecutter
 yay -S --noconfirm --needed spyder
+
+yay -S --noconfirm --needed terragrunt
+yay -S --noconfirm --needed atlantis
+yay -S --noconfirm --needed terraformer
+yay -S --noconfirm --needed tflint
+yay -S --noconfirm --needed sidekick-browser-stable-bin
 
 echo
 tput setaf 3
@@ -215,23 +221,23 @@ sudo usermod -aG docker $USER
 
 # when on xfce
 
-if [ -f /usr/share/xsessions/xfce.desktop ]; then
-
-  echo
-  tput setaf 2
-  echo "################################################################"
-  echo "################### Installing software for Xfce"
-  echo "################################################################"
-  tput sgr0
-  echo
-
-  sudo pacman -S --noconfirm --needed menulibre
-  sudo pacman -S --noconfirm --needed mugshot
-  sudo pacman -S --noconfirm --needed prot16-xfce4-terminal
-  sudo pacman -S --noconfirm --needed tempus-themes-xfce4-terminal-git
-  sudo pacman -S --noconfirm --needed xfce4-terminal-base16-colors-git
-
-fi
+# if [ -f /usr/share/xsessions/xfce.desktop ]; then
+#
+#   echo
+#   tput setaf 2
+#   echo "################################################################"
+#   echo "################### Installing software for Xfce"
+#   echo "################################################################"
+#   tput sgr0
+#   echo
+#
+#   sudo pacman -S --noconfirm --needed menulibre
+#   sudo pacman -S --noconfirm --needed mugshot
+#   sudo pacman -S --noconfirm --needed prot16-xfce4-terminal
+#   sudo pacman -S --noconfirm --needed tempus-themes-xfce4-terminal-git
+#   sudo pacman -S --noconfirm --needed xfce4-terminal-base16-colors-git
+#
+# fi
 
 echo
 tput setaf 2
@@ -269,8 +275,8 @@ tput sgr0
 echo
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+echo git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+echo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
 echo
 tput setaf 6
