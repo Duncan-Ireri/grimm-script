@@ -46,13 +46,13 @@ sudo pacman -S --noconfirm --needed elisa
 sudo pacman -S --noconfirm --needed github-cli
 sudo pacman -S --noconfirm --needed glances
 sudo pacman -S --noconfirm --needed gnucash
-sudo pacman -S --noconfirm --needed intellij-idea-community-edition
+# sudo pacman -S --noconfirm --needed intellij-idea-community-edition
 sudo pacman -S --noconfirm --needed kotlin
 sudo pacman -S --noconfirm --needed nginx
 sudo pacman -S --noconfirm --needed okular
 sudo pacman -S --noconfirm --needed postgresql
 sudo pacman -S --noconfirm --needed prometheus
-sudo pacman -S --noconfirm --needed pycharm-community-edition
+# sudo pacman -S --noconfirm --needed pycharm-community-edition
 sudo pacman -S --noconfirm --needed python-aws-xray-sdk
 sudo pacman -S --noconfirm --needed python-dropbox
 sudo pacman -S --noconfirm --needed python-flask-marshmallow
@@ -80,7 +80,7 @@ sudo pacman -S --noconfirm --needed meld
 sudo pacman -S --noconfirm --needed python-pywal
 sudo pacman -S --noconfirm --needed pv
 sudo pacman -S --noconfirm --needed ttf-roboto-mono
-sudo pacman -S --noconfirm --needed libreoffice-fresh
+# sudo pacman -S --noconfirm --needed libreoffice-fresh
 sudo pacman -S --noconfirm --needed terminator
 sudo pacman -S --noconfirm --needed screen
 sudo pacman -S --noconfirm --needed opencv
@@ -97,9 +97,9 @@ echo "################################################################"
 tput sgr0
 echo
 
-yay -S --noconfirm --needed python39
-yay -S --noconfirm --needed python38
-yay -S --noconfirm --needed python37
+# yay -S --noconfirm --needed python39
+# yay -S --noconfirm --needed python38
+# yay -S --noconfirm --needed python37
 yay -S --noconfirm --needed gradle
 yay -S --noconfirm --needed maven
 yay -S --noconfirm --needed spring-boot-cli
@@ -119,7 +119,7 @@ yay -S --noconfirm --needed terragrunt
 yay -S --noconfirm --needed atlantis
 yay -S --noconfirm --needed terraformer
 yay -S --noconfirm --needed tflint
-yay -S --noconfirm --needed sidekick-browser-stable-bin
+# yay -S --noconfirm --needed sidekick-browser-stable-bin
 
 echo
 tput setaf 3
@@ -133,7 +133,7 @@ git config --global credential.helper store
 git config --global credential.helper
 
 git config --global user.name "DuncanIreri"
-git config --global user.email "duncanireri@gmail.com"
+git config --global user.email "direri@mfsafrica.com"
 sudo git config --system core.editor nano
 
 echo
@@ -169,8 +169,8 @@ echo "################################################################"
 tput sgr0
 echo
 
-yay -S --noconfirm --needed elasticsearch
-yay -S --noconfirm --needed kibana
+# yay -S --noconfirm --needed elasticsearch
+# yay -S --noconfirm --needed kibana
 
 echo
 tput setaf 2
@@ -274,9 +274,9 @@ echo "################################################################"
 tput sgr0
 echo
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-echo git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-echo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# echo git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+# echo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
 echo
 tput setaf 6
