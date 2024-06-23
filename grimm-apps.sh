@@ -132,8 +132,8 @@ echo
 git config --global credential.helper store
 git config --global credential.helper
 
-git config --global user.name "DuncanIreri"
-git config --global user.email "direri@mfsafrica.com"
+git config --global user.name ""
+git config --global user.email ""
 sudo git config --system core.editor nano
 
 echo
